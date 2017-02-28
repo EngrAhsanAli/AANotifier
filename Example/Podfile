@@ -1,0 +1,7 @@
+use_frameworks!
+
+target 'AANotifier_Example' do
+    pod 'AANotifier', :path => '../'
+    
+    
+end

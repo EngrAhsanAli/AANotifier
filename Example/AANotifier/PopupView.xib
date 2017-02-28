@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="CmP-wH-mSH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍🏻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-RR-bDC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.21448569404616524" green="0.57103263420000006" blue="0.5500110174962618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Ejv-e3-fbi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decide ..  Commit ..  Succeed .." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFG-Q6-VRC">
+                    <rect key="frame" x="9" y="60" width="357" height="130"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEf-Pv-VVL">
+                    <rect key="frame" x="0.0" y="190" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.23249217656219132" green="0.33819384487447385" blue="0.50415938579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                    <state key="normal" title="GOT IT !">
+                        <color key="titleColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Tg-RR-bDC" firstAttribute="leading" secondItem="CmP-wH-mSH" secondAttribute="leading" id="5dc-bA-bch"/>
+                <constraint firstAttribute="trailing" secondItem="3Tg-RR-bDC" secondAttribute="trailing" id="7Db-Os-xvD"/>
+                <constraint firstItem="XFG-Q6-VRC" firstAttribute="leading" secondItem="nEf-Pv-VVL" secondAttribute="leading" constant="9" id="7zL-6R-LfZ"/>
+                <constraint firstItem="nEf-Pv-VVL" firstAttribute="top" secondItem="XFG-Q6-VRC" secondAttribute="bottom" id="PXH-Ys-9Ap"/>
+                <constraint firstItem="3Tg-RR-bDC" firstAttribute="top" secondItem="CmP-wH-mSH" secondAttribute="top" id="ULI-lg-bxm"/>
+                <constraint firstItem="3Tg-RR-bDC" firstAttribute="leading" secondItem="XFG-Q6-VRC" secondAttribute="leading" constant="-9" id="bKX-eM-0iZ"/>
+                <constraint firstAttribute="bottom" secondItem="nEf-Pv-VVL" secondAttribute="bottom" id="eyf-xz-yrc"/>
+                <constraint firstItem="3Tg-RR-bDC" firstAttribute="trailing" secondItem="XFG-Q6-VRC" secondAttribute="trailing" constant="9" id="mi6-w5-2zq"/>
+                <constraint firstItem="XFG-Q6-VRC" firstAttribute="trailing" secondItem="nEf-Pv-VVL" secondAttribute="trailing" constant="-9" id="uLx-pF-Od7"/>
+                <constraint firstItem="XFG-Q6-VRC" firstAttribute="top" secondItem="3Tg-RR-bDC" secondAttribute="bottom" id="yGq-UO-Xbp"/>
+                <constraint firstItem="XFG-Q6-VRC" firstAttribute="centerY" secondItem="CmP-wH-mSH" secondAttribute="centerY" id="zhD-Re-hIg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="38.5" y="18"/>
+        </view>
+    </objects>
+</document>

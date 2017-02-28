@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vision without power does bring moral elevation but cannot give a lasting culture. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SX-P9-ga7">
+                    <rect key="frame" x="16" y="11" width="343" height="49"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="0.69549978599999995" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Allama Iqbal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-fn-gdb">
+                    <rect key="frame" x="255" y="59" width="120" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="8Kh-Hg-wdp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                    <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.79612585619999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.30482522076803309" green="0.57324781633740796" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="G5e-fn-gdb" secondAttribute="trailing" id="3sF-aT-haR"/>
+                <constraint firstAttribute="bottom" secondItem="G5e-fn-gdb" secondAttribute="bottom" id="78T-pj-bcX"/>
+                <constraint firstItem="5SX-P9-ga7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="I15-BY-jlq"/>
+                <constraint firstItem="5SX-P9-ga7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="IIf-eU-n3p"/>
+                <constraint firstItem="5SX-P9-ga7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="L0A-9S-X5j"/>
+                <constraint firstItem="G5e-fn-gdb" firstAttribute="top" secondItem="5SX-P9-ga7" secondAttribute="bottom" constant="-1" id="MWK-mN-oz2"/>
+                <constraint firstAttribute="bottom" secondItem="5SX-P9-ga7" secondAttribute="bottom" constant="20" id="PzN-z3-Z34"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="27.5" y="59"/>
+        </view>
+    </objects>
+</document>

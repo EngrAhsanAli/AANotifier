@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lWH-uk-5bX">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AANotifier-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AANotifier_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00O-Rb-8Pd">
+                                <rect key="frame" x="49" y="224" width="255" height="50"/>
+                                <color key="backgroundColor" red="0.3221609252520054" green="0.55230211182580435" blue="0.57103263420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UEk-cC-wRs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="SnackBar View"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="snackBarViewAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="atx-cN-Vpq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G67-aY-skJ">
+                                <rect key="frame" x="49" y="166" width="255" height="50"/>
+                                <color key="backgroundColor" red="0.3221609252520054" green="0.55230211182580435" blue="0.57103263420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KkF-xQ-aY1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="Status View">
+                                    <color key="titleShadowColor" red="0.48005046330000001" green="0.57879851650000003" blue="0.63342811379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="statusViewAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="P5a-9b-n5u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5E-DB-4mx">
+                                <rect key="frame" x="49" y="282" width="255" height="50"/>
+                                <color key="backgroundColor" red="0.3221609252520054" green="0.55230211182580435" blue="0.57103263420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OiK-45-wHU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="Toast View"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toastViewAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FQi-SQ-7jH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USH-EH-bgN">
+                                <rect key="frame" x="49" y="340" width="255" height="50"/>
+                                <color key="backgroundColor" red="0.3221609252520054" green="0.55230211182580435" blue="0.57103263420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qoC-Tg-1aN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="Notification Banner"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bannerViewAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jof-H5-mtv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demos" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yea-or-cPt">
+                                <rect key="frame" x="16" y="166" width="25" height="282"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="9LE-RF-Xnw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRb-QF-7Vo">
+                                <rect key="frame" x="49" y="398" width="255" height="50"/>
+                                <color key="backgroundColor" red="0.3221609252520054" green="0.55230211182580435" blue="0.57103263420000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="Popup View"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="popupViewAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YYM-O5-thw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21498926126721821" green="0.57103263420000006" blue="0.43515050404922989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G67-aY-skJ" firstAttribute="leading" secondItem="yea-or-cPt" secondAttribute="trailing" constant="8" symbolic="YES" id="2Kj-TH-81O"/>
+                            <constraint firstItem="X5E-DB-4mx" firstAttribute="top" secondItem="00O-Rb-8Pd" secondAttribute="bottom" constant="8" symbolic="YES" id="2TR-Yq-KBO"/>
+                            <constraint firstItem="yea-or-cPt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="47w-uv-dRE"/>
+                            <constraint firstItem="00O-Rb-8Pd" firstAttribute="leading" secondItem="X5E-DB-4mx" secondAttribute="leading" id="4q4-4Q-mtS"/>
+                            <constraint firstItem="yea-or-cPt" firstAttribute="bottom" secondItem="mRb-QF-7Vo" secondAttribute="bottom" id="7Op-37-Raz"/>
+                            <constraint firstItem="USH-EH-bgN" firstAttribute="trailing" secondItem="mRb-QF-7Vo" secondAttribute="trailing" id="Czu-Al-6Il"/>
+                            <constraint firstItem="G67-aY-skJ" firstAttribute="trailing" secondItem="00O-Rb-8Pd" secondAttribute="trailing" id="Fc4-i4-KJu"/>
+                            <constraint firstItem="mRb-QF-7Vo" firstAttribute="top" secondItem="USH-EH-bgN" secondAttribute="bottom" constant="8" symbolic="YES" id="FlJ-3u-lWa"/>
+                            <constraint firstItem="USH-EH-bgN" firstAttribute="leading" secondItem="mRb-QF-7Vo" secondAttribute="leading" id="Hbj-OS-R22"/>
+                            <constraint firstItem="00O-Rb-8Pd" firstAttribute="trailing" secondItem="X5E-DB-4mx" secondAttribute="trailing" id="Mk9-cJ-4k9"/>
+                            <constraint firstItem="X5E-DB-4mx" firstAttribute="leading" secondItem="USH-EH-bgN" secondAttribute="leading" id="UCs-ie-JcF"/>
+                            <constraint firstItem="yea-or-cPt" firstAttribute="centerY" secondItem="X5E-DB-4mx" secondAttribute="centerY" id="YSB-kq-AgI"/>
+                            <constraint firstItem="G67-aY-skJ" firstAttribute="leading" secondItem="00O-Rb-8Pd" secondAttribute="leading" id="ZIZ-5h-Qf4"/>
+                            <constraint firstItem="G67-aY-skJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="aXJ-2r-tUp"/>
+                            <constraint firstItem="yea-or-cPt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="102" id="b3a-Jh-nNm"/>
+                            <constraint firstItem="yea-or-cPt" firstAttribute="top" secondItem="G67-aY-skJ" secondAttribute="top" id="coK-hb-2pO"/>
+                            <constraint firstItem="00O-Rb-8Pd" firstAttribute="top" secondItem="G67-aY-skJ" secondAttribute="bottom" constant="8" symbolic="YES" id="flK-Hc-4gm"/>
+                            <constraint firstItem="X5E-DB-4mx" firstAttribute="trailing" secondItem="USH-EH-bgN" secondAttribute="trailing" id="fxO-9C-9Sb"/>
+                            <constraint firstItem="USH-EH-bgN" firstAttribute="top" secondItem="X5E-DB-4mx" secondAttribute="bottom" constant="8" symbolic="YES" id="hIM-e6-iY2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AANotifier" id="QJa-xW-r8e">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="swH-cl-ToG">
+                            <connections>
+                                <action selector="addNotifiersAction:" destination="vXZ-lx-hvc" id="UUM-wm-QBG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="8EK-8j-9CD">
+                            <connections>
+                                <action selector="removeNotifiersAction:" destination="vXZ-lx-hvc" id="Hyl-KT-JXx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.5" y="-577.81690140845069"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kod-pX-w6Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lWH-uk-5bX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBU-zP-89J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="2mL-zZ-01J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUA-lM-4Xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.5" y="-577.81690140845069"/>
+        </scene>
+    </scenes>
+</document>

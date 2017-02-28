@@ -1,0 +1,19 @@
+PODS:
+  - AANotifier (0.1.0):
+    - AAViewAnimator (~> 0.1.0)
+  - AAViewAnimator (0.1.0)
+
+DEPENDENCIES:
+  - AANotifier (from `../`)
+
+EXTERNAL SOURCES:
+  AANotifier:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AANotifier: 4e347dedc7088f8687c1f60c45577e9d43a3245a
+  AAViewAnimator: 9a4ae454bb428ebaed906ec4e6e250150bee790e
+
+PODFILE CHECKSUM: b816bb2ed5a8125831cec3f5a7275c5de8fc6633
+
+COCOAPODS: 1.2.0

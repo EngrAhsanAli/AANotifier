@@ -1,0 +1,6 @@
+framework module AANotifier {
+  umbrella header "AANotifier-umbrella.h"
+
+  export *
+  module * { export * }
+}
