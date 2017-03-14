@@ -103,7 +103,7 @@ github "EngrAhsanAli/AANotifier" "master"
 ```
 
 Then import the library in all files where you use it:
-```ruby
+```swift
 import AANotifier
 ```
 
@@ -127,7 +127,7 @@ If you prefer not to use either of the above mentioned dependency managers, you 
 You can simply define your notifier with options as lazy initialization in your view controller.
 
 **Usage:**
-```
+```swift
 lazy var myNotifier: AANotifier = {
 let notifierView = UIView.fromNib(nibName: "MyNotifier")!
 let options: [AANotifierOptions] = [
@@ -153,7 +153,7 @@ return notifier
 You can simply show the notifier by `show` method or `animateNotifer` for animation options.
 
 **Usage:**
-```
+```swift
 // Show simply!
 myNotifier.show()
 
@@ -170,7 +170,7 @@ notifier.hide()
 You can simply hide the notifier by `hide` method.
 
 **Usage:**
-```
+```swift
 // Show hide!
 myNotifier.hide()
 
