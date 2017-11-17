@@ -56,7 +56,7 @@ open class AANotifier: NSObject {
     var duration: TimeInterval = 0.8
     
     /// didTapped closure
-    var didTapped: didTapped?
+    @objc var didTapped: didTapped?
     
     /// AANotifier view
     open var view: UIView
