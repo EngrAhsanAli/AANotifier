@@ -92,7 +92,7 @@ open class AANotifier: NSObject {
     /// Tap gesture
     lazy var tapGesture: UITapGestureRecognizer = {
         let tapGesture = UITapGestureRecognizer(target: self,
-                                                action: #selector(didTapped(_:)))
+                                                action: #selector(didTappedAction))
         tapGesture.numberOfTapsRequired = 1
         return tapGesture
     }()
@@ -176,10 +176,10 @@ open class AANotifier: NSObject {
 
     }
     
-    /// didTapped Selector
+    /// didTappedAction Selector
     ///
     /// - Parameter sender: Tap Gesture
-    @objc func didTapped(_ sender: UITapGestureRecognizer) {
+    @objc func didTappedAction(_ sender: UITapGestureRecognizer) {
         hideOnTap ? hide() : didTapped?()
     }
     
