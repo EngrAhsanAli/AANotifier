@@ -91,8 +91,7 @@ open class AANotifier: NSObject {
     
     /// Tap gesture
     lazy var tapGesture: UITapGestureRecognizer = {
-        let tapGesture = UITapGestureRecognizer(target: self,
-                                                action: #selector(didTappedAction))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTappedAction(_:)))
         tapGesture.numberOfTapsRequired = 1
         return tapGesture
     }()
