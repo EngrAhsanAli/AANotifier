@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0910"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F6F3BB380E873A7A3E242BCF2176945"
-               BuildableName = "AAViewAnimator.framework"
-               BlueprintName = "AAViewAnimator"
+               BlueprintIdentifier = "F1F13F80FC24E0A529A72C699326D94D"
+               BuildableName = "Pods_AANotifier_Example.framework"
+               BlueprintName = "Pods-AANotifier_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F6F3BB380E873A7A3E242BCF2176945"
-            BuildableName = "AAViewAnimator.framework"
-            BlueprintName = "AAViewAnimator"
+            BlueprintIdentifier = "F1F13F80FC24E0A529A72C699326D94D"
+            BuildableName = "Pods_AANotifier_Example.framework"
+            BlueprintName = "Pods-AANotifier_Example"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -70,7 +70,6 @@ open class AANotifier: NSObject {
             }
             
             let transition = isVisible ? transitionA : transitionB
-            
             view.aa_animate(duration: duration, springDamping: .none, animation: transition, completion: { flag in
                 
                 if flag {
@@ -138,7 +137,7 @@ open class AANotifier: NSObject {
     }
     
     /// AANotifier hide view
-    open func hide() {
+    @objc open func hide() {
         deadlineTimer?.invalidate()
         animateNotifer(false)
     }
@@ -180,7 +179,7 @@ open class AANotifier: NSObject {
     /// didTapped Selector
     ///
     /// - Parameter sender: Tap Gesture
-    func didTapped(_ sender: UITapGestureRecognizer) {
+    @objc func didTapped(_ sender: UITapGestureRecognizer) {
         hideOnTap ? hide() : didTapped?()
     }
     
@@ -191,6 +190,7 @@ open class AANotifier: NSObject {
         guard hideStatusBar else {
             return
         }
+        
         UIApplication.shared.statusBarView?.isHidden = show
     }
     

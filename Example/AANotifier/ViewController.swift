@@ -103,7 +103,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func hidePopupView() {
+    @objc func hidePopupView() {
         popupViewNotifier.hide()
     }
     

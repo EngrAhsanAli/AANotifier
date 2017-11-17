@@ -1,7 +1,7 @@
 PODS:
-  - AANotifier (0.1.0):
-    - AAViewAnimator (~> 0.1.0)
-  - AAViewAnimator (0.1.0)
+  - AANotifier (0.1.1):
+    - AAViewAnimator (~> 0.1.1)
+  - AAViewAnimator (0.1.1)
 
 DEPENDENCIES:
   - AANotifier (from `../`)
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AANotifier: 4e347dedc7088f8687c1f60c45577e9d43a3245a
-  AAViewAnimator: 9a4ae454bb428ebaed906ec4e6e250150bee790e
+  AANotifier: c21c702f6d36854fc012548574d4e267dfd1fdf6
+  AAViewAnimator: e9e3095db16f89e76dc4ad9b42f45e47155df1a5
 
 PODFILE CHECKSUM: b816bb2ed5a8125831cec3f5a7275c5de8fc6633
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0.beta.2
