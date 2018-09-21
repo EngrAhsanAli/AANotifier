@@ -20,7 +20,7 @@
 
 #AANotifier
 
-[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AANotifier.svg)](http://cocoadocs.org/docsets/AANotifier) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AANotifier.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AANotifier) 
+[![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/AANotifier.svg)](http://cocoadocs.org/docsets/AANotifier) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/EngrAhsanAli/AANotifier.svg?branch=master)](https://travis-ci.org/EngrAhsanAli/AANotifier) 
 ![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg) [![CocoaPods](https://img.shields.io/cocoapods/p/AANotifier.svg)]()
 
 
@@ -75,7 +75,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-pod 'AANotifier'
+pod 'AANotifier' , '1.0'
 end
 
 ```
@@ -131,12 +131,14 @@ You can simply define your notifier with options as lazy initialization in your 
 lazy var myNotifier: AANotifier = {
 let notifierView = UIView.fromNib(nibName: "MyNotifier")!
 let options: [AANotifierOptions] = [
-.duration(0.4), // Time interval for animation
-.transitionA(.fromBottom), // Show notifier animation
-.transitionB(.toBottom), // Hide notifier animation
+.transitionA(.fromBottom, 0.9), // Show notifier animation
+.transitionB(.toBottom, 0.9), // Hide notifier animation
 .position(.bottom), // notifier position
 .preferedHeight(50), // notifier height
-.margins(H: 60, V: 40) // notifier margins
+.margins(H: 60, V: 40), // notifier margins
+.hideStatusBar, // Hides the status bar view when animating
+.hideOnTap, // Hides on tap
+.deadline(2.0) // Deadline of notifier for dismissal
 ]
 let notifier = AANotifier(notifierView, withOptions: options)
 return notifier
@@ -157,10 +159,10 @@ You can simply show the notifier by `show` method or `animateNotifer` for animat
 // Show simply!
 myNotifier.show()
 
-// Show with options
-myNotifier.animateNotifer(true, deadline: 2, didTapped: {
-notifier.hide()
-})
+// Tap listner
+notifier.didTapped = {
+    notifier.hide()
+}
 ```
 
 <div id='section-id-132'/>
@@ -184,14 +186,13 @@ You can use following notifier options for your notifier:
 
 |  Options	 	  |  Types	      	 	  | Description		    				       	 |
 |-----------------|-----------------------|----------------------------------------------|
-| `duration`   	  | `TimeInterval`     	  | Animation time interval   					 |
 | `preferedHeight`| `CGFloat` 			  | AANotifier height    						 |
-| `hideStatusBar` | `Bool` 				  | Status bar visibility flag 	 				 |
-| `transitionA`   | `AAViewAnimators`     | Animator for showing notifier 			     |
-| `transitionB`   | `AAViewAnimators`     | Animator for hiding notifier 				 |
+| `hideStatusBar` | `---` 				  | Status bar visibility if added 	 				 |
+| `transitionA`   | `AAViewAnimators, TimeInterval`     | Animator for showing notifier 			     |
+| `transitionB`   | `AAViewAnimators, TimeInterval`     | Animator for hiding notifier 				 |
 | `position`      | `AANotifierPosition`  | AANotifier position	   						 |
-| `hideOnTap` 	  | `Bool`				  | Flag for hide on tap	    			   	 |
-| `margins` 	  | `(CGFloat?, CGFloat?)`| Horizontal and vertical margins respectively |
+| `hideOnTap` 	  | `---` 		  | Hides on tap if added	    			   	 |
+| `margins`       | `(CGFloat?, CGFloat?)`| Horizontal and vertical margins respectively |
 
 <div id='section-id-156'/>
 

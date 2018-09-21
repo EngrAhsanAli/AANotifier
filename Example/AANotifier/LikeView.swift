@@ -20,7 +20,7 @@ class LikeView: AANibView {
     }
 
     @IBAction func buttonAction(_ sender: UIButton) {
-        notifer?.animateNotifer(false)
+//        notifer?.animateNotifer()
     }
     
 }

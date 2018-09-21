@@ -16,13 +16,14 @@ class ViewController: UIViewController {
         
         let notifierView = UIView.fromNib(nibName: "ToastView")!
         let options: [AANotifierOptions] = [
-            .duration(0.4),
-            .transitionA(.fromBottom),
-            .transitionB(.toBottom),
+            .deadline(2.0),
+            .transitionA(.fromBottom, 0.4),
+            .transitionB(.toBottom, 5.0),
             .position(.bottom),
             .preferedHeight(50),
             .margins(H: 60, V: 40)
         ]
+        
         let notifier = AANotifier(notifierView, withOptions: options)
         return notifier
     }()
@@ -31,24 +32,27 @@ class ViewController: UIViewController {
         
         let notifierView = UIView.fromNib(nibName: "StatusView")!
         let options: [AANotifierOptions] = [
-            .hideStatusBar(true),
+            .deadline(2.0),
+            .hideStatusBar,
+            .margins(H: 0, V: 30),
             .position(.top),
-            .transitionA(.fromTop),
-            .transitionB(.toTop)
+            .transitionA(.fromTop, 0.8),
+            .transitionB(.toTop, 0.8)
         ]
         let notifier = AANotifier(notifierView, withOptions: options)
         return notifier
     }()
     
-    lazy var popupViewNotifier: AANotifier = {
+     lazy var popupViewNotifier: AANotifier = {
         
         let notifierView = UIView.fromNib(nibName: "PopupView")!
         let options: [AANotifierOptions] = [
+            .deadline(2.0),
             .position(.middle),
             .preferedHeight(250),
             .margins(H: 20, V: nil),
-            .transitionA(.fromTop),
-            .transitionB(.toBottom)
+            .transitionA(.fromTop, 0.8),
+            .transitionB(.toBottom, 0.8)
         ]
         let button = notifierView.viewWithTag(100) as! UIButton
         button.addTarget(self, action: #selector(hidePopupView), for: .touchUpInside)
@@ -56,43 +60,36 @@ class ViewController: UIViewController {
         return notifier
     }()
     
-    lazy var infoViewNotifier: AANotifier = {
+     lazy var infoViewNotifier: AANotifier = {
         
         let notifierView = UIView.fromNib(nibName: "InfoView")!
         let options: [AANotifierOptions] = [
+            .deadline(2.0),
             .position(.top),
             .preferedHeight(80),
-            .transitionA(.fromTop),
-            .transitionB(.toTop)
+            .transitionA(.fromTop, 0.8),
+            .transitionB(.toTop, 0.8)
         ]
         let notifier = AANotifier(notifierView, withOptions: options)
         return notifier
     }()
 
-    lazy var snackBarViewNotifier: AANotifier = {
+     lazy var snackBarViewNotifier: AANotifier = {
         
         let notifierView = LikeView()
         let options: [AANotifierOptions] = [
+            .deadline(2.0),
             .position(.bottom),
             .preferedHeight(60),
-            .hideOnTap(false),
-            .transitionA(.fromBottom),
-            .transitionB(.toLeft)
+            .hideOnTap,
+            .transitionA(.fromBottom, 0.8),
+            .transitionB(.toLeft, 0.8)
         ]
         let notifier = AANotifier(notifierView, withOptions: options)
         notifierView.notifer = notifier
+
         return notifier
     }()
-    
-    lazy var notifiers: [AANotifier] = {
-        let notifiers: [AANotifier] = [self.toastViewNotifier,
-                                       self.statusViewNotifier,
-                                       self.popupViewNotifier,
-                                       self.infoViewNotifier,
-                                       self.snackBarViewNotifier]
-        return notifiers
-    }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,14 +103,7 @@ class ViewController: UIViewController {
     @objc func hidePopupView() {
         popupViewNotifier.hide()
     }
-    
-    @IBAction func addNotifiersAction(_ sender: Any) {
-        notifiers.forEach({$0.addView()})
-    }
-    
-    @IBAction func removeNotifiersAction(_ sender: Any) {
-        notifiers.forEach({$0.removeView()})
-    }
+
     
 }
 
@@ -130,9 +120,11 @@ extension ViewController {
     @IBAction func toastViewAction(_ sender: Any) {
         
         let notifier = toastViewNotifier
-        notifier.animateNotifer(true, deadline: 2, didTapped: {
+        notifier.didTapped = {
             notifier.hide()
-        })
+        }
+        notifier.show()
+
     }
     
     @IBAction func statusViewAction(_ sender: Any) {

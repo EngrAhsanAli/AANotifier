@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lWH-uk-5bX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lWH-uk-5bX">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -130,18 +130,7 @@
                             <constraint firstItem="USH-EH-bgN" firstAttribute="top" secondItem="X5E-DB-4mx" secondAttribute="bottom" constant="8" symbolic="YES" id="hIM-e6-iY2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="AANotifier" id="QJa-xW-r8e">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="swH-cl-ToG">
-                            <connections>
-                                <action selector="addNotifiersAction:" destination="vXZ-lx-hvc" id="UUM-wm-QBG"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="8EK-8j-9CD">
-                            <connections>
-                                <action selector="removeNotifiersAction:" destination="vXZ-lx-hvc" id="Hyl-KT-JXx"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="AANotifier" id="QJa-xW-r8e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,7 +142,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lWH-uk-5bX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBU-zP-89J">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

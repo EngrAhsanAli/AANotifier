@@ -12,7 +12,7 @@ import AAViewAnimator
 // AANotifier allows you to create UIView based fragments to be appear on screen at runtime
 // It is designed to make custom elements in UIView even from xib based to animate on screen
 // It can be a custom popup view, action bar, message display banner etc.
-open class AANotifier: NSObject {
+open class AANotifier {
     
     /// AANotifier view height
     var preferedHeight: CGFloat?
@@ -29,8 +29,14 @@ open class AANotifier: NSObject {
     /// AANotifier view postion on screen
     var position: AANotifierPosition = .bottom
     
+    /// AANotifier animation interval
+    var durationA: TimeInterval = 0.8
+    
+    /// AANotifier animation interval
+    var durationB: TimeInterval = 0.8
+    
     /// AANotifier flag to hide on tap
-    var hideOnTap: Bool = true
+    var hideOnTap: Bool = false
     
     /// AANotifier flag to hide status bar when the view will appear
     var hideStatusBar: Bool = false
@@ -39,7 +45,7 @@ open class AANotifier: NSObject {
     var deadlineTimer: Timer?
     
     /// AANotifier deadline interval to disappear the view from screen
-    var deadline: TimeInterval? {
+    open var deadline: TimeInterval? {
         didSet {
             guard let interval = deadline else {
                 return
@@ -52,33 +58,12 @@ open class AANotifier: NSObject {
         }
     }
     
-    /// AANotifier animation interval
-    var duration: TimeInterval = 0.8
     
-    /// didTapped closure
-    @objc var didTapped: didTapped?
+    /// Did Tapped closure
+    @objc open var didTapped: didTapped?
     
     /// AANotifier view
-    open var view: UIView
-    
-    /// AANotifier view flag for visibility control
-    var isVisible: Bool = false {
-        didSet {
-            
-            guard isVisible != oldValue else {
-                return
-            }
-            
-            let transition = isVisible ? transitionA : transitionB
-            view.aa_animate(duration: duration, springDamping: .none, animation: transition, completion: { flag in
-                
-                if flag {
-                    self.toggleStatusBar(self.isVisible)
-                }
-            })
-            
-        }
-    }
+    var view: UIView
     
     /// UIWindow root view controller
     lazy var keyWindow: UIWindow = {
@@ -101,34 +86,51 @@ open class AANotifier: NSObject {
     /// - Parameters:
     ///   - view: AANotifier view
     ///   - options: options
-    public init(_ view: UIView, withOptions options: [AANotifierOptions]?) {
+    public init(_ view: UIView, withOptions options: [AANotifierOptions]) {
         self.view = view
-        super.init()
         setOptions(options)
-        addView()
+    }
+    
+    /// Starts animation
+    ///
+    /// - Parameter isVisible: Visibility flag
+    private func startAnimation(_ isVisible: Bool) {
+        isVisible ? addNotifierView() : removeNotifierView()
+
+        let transition = isVisible ? transitionA : transitionB
+        let duration   = isVisible ? durationA : durationB
+        view.aa_animate(duration: duration, repeatCount: 1, springDamping: .none, animation: transition) { (flag, _) in
+
+            if flag {
+                self.toggleStatusBar(isVisible)
+            }
+        }
+        
     }
     
     /// AANotifier options if any
     ///
     /// - Parameter options: AANotifierOptions
-    func setOptions(_ options: [AANotifierOptions]?){
+    private func setOptions(_ options: [AANotifierOptions]){
 
-        options?.forEach { (option) in
+        options.forEach { (option) in
             switch option {
-            case let .duration(value):
-                duration = value
             case let .preferedHeight(value):
                 preferedHeight = value
-            case let .hideStatusBar(value):
-                hideStatusBar = value
-            case let .transitionA(value):
+            case .hideStatusBar:
+                hideStatusBar = true
+            case let .transitionA(value, duration):
                 transitionA = value
-            case let .transitionB(value):
+                durationA = duration
+            case let .transitionB(value, duration):
                 transitionB = value
+                durationB = duration
             case let .position(value):
                 position = value
-            case let .hideOnTap(value):
-                hideOnTap = value
+            case .hideOnTap:
+                hideOnTap = true
+            case let .deadline (value):
+                deadline = value
             case let .margins(value1, value2):
                 margin = AAMargin(H: value1, V: value2)
             }
@@ -138,58 +140,45 @@ open class AANotifier: NSObject {
     /// AANotifier hide view
     @objc open func hide() {
         deadlineTimer?.invalidate()
-        animateNotifer(false)
+        startAnimation(false)
     }
     
-    /// AANotifier show view
+    /// AANotifier animate notifier with completion
     open func show() {
-        animateNotifer(true)
+        startAnimation(true)        
     }
     
     /// AANotifier remove view
-    open func removeView() {
-        view.removeGestureRecognizer(tapGesture)
-        view.removeFromSuperview()
+    private func removeNotifierView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.view.removeGestureRecognizer(self.tapGesture)
+            self.view.removeFromSuperview()
+        }
     }
     
     /// AANotifier add view
-    open func addView() {
+    private func addNotifierView() {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.addGestureRecognizer(tapGesture)
         keyWindow.addSubview(view)
         NSLayoutConstraint.activate(constraints)
     }
 
-    
-    /// AANotifier animate notifier with completion
-    ///
-    /// - Parameters:
-    ///   - isVisible: visibility flag
-    ///   - deadline: deadline interval
-    ///   - didTapped: tapped closure
-    open func animateNotifer(_ isVisible: Bool, deadline: TimeInterval? = nil, didTapped: didTapped? = nil) {
-        
-        self.didTapped = didTapped
-        self.deadline = deadline
-        self.isVisible = isVisible
-
-    }
-    
     /// didTappedAction Selector
     ///
     /// - Parameter sender: Tap Gesture
-    @objc func didTappedAction(_ sender: UITapGestureRecognizer) {
-        hideOnTap ? hide() : didTapped?()
+    @objc private func didTappedAction(_ sender: UITapGestureRecognizer) {
+        if hideOnTap {
+            hide()
+        }
+        didTapped?()
     }
     
     /// Toggle Status Bar if allowed
     ///
     /// - Parameter show: visibility flag
-    func toggleStatusBar(_ show: Bool) {
-        guard hideStatusBar else {
-            return
-        }
-        
+    private func toggleStatusBar(_ show: Bool) {
+        guard hideStatusBar else { return }
         UIApplication.shared.statusBarView?.isHidden = show
     }
     

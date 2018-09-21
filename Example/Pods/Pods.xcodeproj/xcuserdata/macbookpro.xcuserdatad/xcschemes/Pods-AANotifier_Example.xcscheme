@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8A66B71EDA11F6D42EF217BDCDAD9BA8"
-               BuildableName = "AAViewAnimator.framework"
-               BlueprintName = "AAViewAnimator"
+               BlueprintIdentifier = "EA843F0AD6BC8C03E6C7FE3B5F20CCE7"
+               BuildableName = "Pods_AANotifier_Example.framework"
+               BlueprintName = "Pods-AANotifier_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8A66B71EDA11F6D42EF217BDCDAD9BA8"
-            BuildableName = "AAViewAnimator.framework"
-            BlueprintName = "AAViewAnimator"
+            BlueprintIdentifier = "EA843F0AD6BC8C03E6C7FE3B5F20CCE7"
+            BuildableName = "Pods_AANotifier_Example.framework"
+            BlueprintName = "Pods-AANotifier_Example"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

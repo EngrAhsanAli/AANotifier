@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'AANotifier'
-s.version          = '0.1.1'
+s.version          = '1.0'
 s.summary          = 'AANotifier allows you to create UIView based fragments to be appear on screen at runtime in iOS, written in Swift.'
 
 s.description      = <<-DESC
@@ -18,6 +18,6 @@ s.ios.deployment_target = '8.0'
 
 s.source_files = 'AANotifier/Classes/**/*'
 
-s.dependency 'AAViewAnimator', '~> 0.1.1'
+s.dependency 'AAViewAnimator', '~> 1.0'
 end
 

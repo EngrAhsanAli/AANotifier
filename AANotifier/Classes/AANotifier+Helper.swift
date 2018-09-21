@@ -36,15 +36,16 @@ struct AAMargin {
 /// - position: AANotifier position
 /// - hideOnTap: flag for hide on tap
 /// - margins: margins horizontal and vertical
+/// - deadline: dismiss deadline
 public enum AANotifierOptions {
     
-    case duration(TimeInterval)
     case preferedHeight(CGFloat)
-    case hideStatusBar(Bool)
-    case transitionA(AAViewAnimators)
-    case transitionB(AAViewAnimators)
+    case hideStatusBar
+    case transitionA(AAViewAnimators, TimeInterval)
+    case transitionB(AAViewAnimators, TimeInterval)
     case position(AANotifierPosition)
-    case hideOnTap(Bool)
+    case hideOnTap
+    case deadline(TimeInterval)
     case margins(H: CGFloat?, V: CGFloat?)
 }
 
