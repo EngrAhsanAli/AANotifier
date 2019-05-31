@@ -10,7 +10,7 @@
 open class AANibView: UIView {
     
     /// View
-    var view:UIView!;
+    var view:UIView!
     
     /// Nib name
     var nibName: String {
@@ -30,7 +30,7 @@ open class AANibView: UIView {
     
     //MARK: loadViewFromNib
     private func loadViewFromNib() {
-        view = Bundle.main.loadNibNamed(nibName, owner: self, options: nil)?[0] as! UIView
+        view = Bundle.main.loadNibNamed(nibName, owner: self, options: nil)?[0] as? UIView
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.frame = bounds
         addSubview(view)

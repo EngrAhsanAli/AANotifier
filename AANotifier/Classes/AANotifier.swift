@@ -222,7 +222,7 @@ fileprivate extension AANotifier {
     }
     
     /// Get Layout constraints helper
-    func getConstraint(_ attr: NSLayoutAttribute, constant: CGFloat = 0) -> NSLayoutConstraint {
+    func getConstraint(_ attr: NSLayoutConstraint.Attribute, constant: CGFloat = 0) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: view, attribute: attr, relatedBy: .equal, toItem: keyWindow, attribute: attr, multiplier: 1, constant: constant)
     }
 }
