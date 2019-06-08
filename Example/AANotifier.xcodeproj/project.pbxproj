@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39AD9229AA21286A4179E2DE /* AANotifier.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AANotifier.podspec; path = ../AANotifier.podspec; sourceTree = "<group>"; };
+		39AD9229AA21286A4179E2DE /* AANotifier.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AANotifier.podspec; path = ../AANotifier.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		420943041E65E65B001FB091 /* PopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupView.xib; sourceTree = "<group>"; };
 		423591F61E549F29001C2B59 /* LikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
 		423591F81E54B095001C2B59 /* StatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
@@ -187,6 +187,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
