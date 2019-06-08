@@ -18,6 +18,6 @@ s.ios.deployment_target = '8.0'
 
 s.source_files = 'AANotifier/Classes/**/*'
 
-s.dependency 'AAViewAnimator', '~> 1.0'
+s.dependency 'AAViewAnimator', '~> 1.1'
 end
 

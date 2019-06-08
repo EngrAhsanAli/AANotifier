@@ -7,317 +7,297 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D6012362345258C890477D074BDE0D8 /* Pods-AANotifier_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE7B0472E58AFFB0E132D681CF7732F /* Pods-AANotifier_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DF7F4F04D05168EAA5B42FB0F246B70 /* AAViewAnimator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787177D646A0721DA5FC69951A3BBFC0 /* AAViewAnimator+Helper.swift */; };
-		41317A9E4011ECCFDEDC9FF75879301F /* AAViewAnimator+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C493DE15EF5D59159712A3048F3F1E /* AAViewAnimator+UIKit.swift */; };
-		413CE7F0A8AC6DBC77D4B314DA4AD78F /* AANotifier+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74210DF6E1BEB8C29C59A4130DAEB63E /* AANotifier+Helper.swift */; };
-		4D60650580522D491CCABC9010DC5614 /* AAViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D204C8E47BECDB18C2349F788488B8 /* AAViewAnimator.swift */; };
-		53743EDE27046FCE6AA092581691CFF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21278E4A792EE1EC212630A5E2BC8064 /* Foundation.framework */; };
-		67E60FC96259D0BA9329EC5A50EEC22E /* AAViewAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50E847B921B3D490D0159391893245C /* AAViewAnimator.framework */; };
-		A2366958BE4833D0D4073B9931E95A7B /* AAViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB6CC1850AFBAB25FC178DCC2E53D14 /* AAViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B060DCCD8079C4CAC518270E7967F3B0 /* AAViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6919964D77A7D3AF8E5A6B6C759AA4FC /* AAViewAnimator-dummy.m */; };
-		BE3753C86509DEFEEA3CAEBEB8325638 /* AANibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FB626A7802997D8182FF89317531A8 /* AANibView.swift */; };
-		D027BCE43AFC55FBC2CF363FDF978D86 /* AANotifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF1E8588AD77D580AD3D19F842CF043 /* AANotifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9C869543269FE21E29C849BD56EDAE3 /* Pods-AANotifier_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B560D257B3B0115BC197E2D42F7162CC /* Pods-AANotifier_Example-dummy.m */; };
-		DC34241038AC48D3ABD833073DD3D336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21278E4A792EE1EC212630A5E2BC8064 /* Foundation.framework */; };
-		EC075D4003239DE1EEE2EF79819011D1 /* AANotifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D1D1B8A1E82FE59DE382FFA197C8C /* AANotifier-dummy.m */; };
-		F0DD328F52EA562EA55788E4BA1FB066 /* AANotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B682CCC11FFD800E8B186E9EFA6E634 /* AANotifier.swift */; };
-		F9EA0D68FD5E69310FB533D16E428B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21278E4A792EE1EC212630A5E2BC8064 /* Foundation.framework */; };
+		14273A58BA39AE3B54DA411FB8E37B87 /* AANotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1530D08B264CDEA07ABF0F654CD297 /* AANotifier.swift */; };
+		27227651FEF4F9976128D3FD89334E40 /* AANotifier+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956BC0C319687DC0214E753FEE410F79 /* AANotifier+Helper.swift */; };
+		3D6DD37140A5FF9F2DDE50F07A8ED336 /* AAViewAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CC1F676BC3C2557882BAD068C24DC7 /* AAViewAnimator.framework */; };
+		4824B29344ECD01513D97147081F083E /* Pods-AANotifier_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A06BB7E8EA9575BD86D6C829DF9F30 /* Pods-AANotifier_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F06CD7637B68FF2D684B37C72785471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33F1EA52AD4DF9512EE7B22B22E3556 /* Foundation.framework */; };
+		6407E0A0CA0B3981ACCC7B57EF53F5FB /* AAViewAnimator+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6753488034D059799763D24C9B90FD57 /* AAViewAnimator+UIKit.swift */; };
+		64BF340CB4CAC10800106FCB3DFA42E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33F1EA52AD4DF9512EE7B22B22E3556 /* Foundation.framework */; };
+		6C79962AF6B21151C5B72AB6BC48FC70 /* Pods-AANotifier_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8B4DE10060AC3446B77919E92D4671 /* Pods-AANotifier_Example-dummy.m */; };
+		83F2DA378BA04EA171ED0717602F9C50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33F1EA52AD4DF9512EE7B22B22E3556 /* Foundation.framework */; };
+		8698F12C7871483160B5A16D457A1405 /* AAViewAnimator+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DF11362848F2B9C21AD5326914944 /* AAViewAnimator+Helper.swift */; };
+		BC9EBECBDA9A9C9D89848839E4FC9362 /* AAViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D8238720DC90C5390307C82F38E12E /* AAViewAnimator-dummy.m */; };
+		C69D45ECBB9D8AABE4639148F160AC21 /* AAViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5492DDA58BBEBCA021AF0DCF84108 /* AAViewAnimator.swift */; };
+		D6F39F52BDDD674EC77696D49061E068 /* AANotifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E78B6C8114A8249692CC3DD7E54F6AA3 /* AANotifier-dummy.m */; };
+		E3CBF56D7364E96A8A015E98285054F0 /* AAViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE004ABBBD69FDB0476A73C42D233CB /* AAViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BD57DC039EB8995AF4C79431593477 /* AANotifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B00E77714968E1A507D000229A701A /* AANotifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4DF1D62DE230FEBB61A91DCC5791012 /* AANibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753BD79818AD0F8C9C876CF5AA731938 /* AANibView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5C53E0B3D494E80A7BFBC31DA841C7EE /* PBXContainerItemProxy */ = {
+		350675A1D63A97A6E3C96E5E1F7B1821 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A66B71EDA11F6D42EF217BDCDAD9BA8;
+			remoteGlobalIDString = 55E0105892DDA43904C07BFDFA1E5561;
 			remoteInfo = AAViewAnimator;
 		};
-		C4AEF9F04F8258B5ED7950B39C740FAB /* PBXContainerItemProxy */ = {
+		99A688C5B3DB12B8B91430D698A4493C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A66B71EDA11F6D42EF217BDCDAD9BA8;
+			remoteGlobalIDString = 55E0105892DDA43904C07BFDFA1E5561;
 			remoteInfo = AAViewAnimator;
 		};
-		F669BF51A011F8BF12F8F40AB813502C /* PBXContainerItemProxy */ = {
+		BBF2393BFC0F55C81C24BD3FC1E3FF80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4BD35D4DE788223D3E2C7FB2362DEB60;
+			remoteGlobalIDString = 5F368DECEF286D58C7DDBE8F8A0E4AFA;
 			remoteInfo = AANotifier;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B26713D4E48247E8E00D133B6A2BE1 /* AANotifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AANotifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14D84EE34EA0E31455E2067FF4802D60 /* AAViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AAViewAnimator.modulemap; sourceTree = "<group>"; };
-		1C27B3765B941442B8E4D3A98D3933DA /* Pods-AANotifier_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AANotifier_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		21278E4A792EE1EC212630A5E2BC8064 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		27FD18935590529FE4C09CF0746987DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2F36C3849B9D8C3C85D8873FB88EC3CE /* Pods-AANotifier_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AANotifier_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3B3319DCE2457700C5D2E6C76CA6F2E7 /* Pods_AANotifier_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AANotifier_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DCE492D2A538E07D453B9F996606A42 /* Pods-AANotifier_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AANotifier_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3F588431AC8CC73917CD26BB9ED84FD1 /* Pods-AANotifier_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AANotifier_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		49BF95AC98A0AFA928B720A193E06EF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5CB6CC1850AFBAB25FC178DCC2E53D14 /* AAViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAViewAnimator-umbrella.h"; sourceTree = "<group>"; };
-		5CE7B0472E58AFFB0E132D681CF7732F /* Pods-AANotifier_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AANotifier_Example-umbrella.h"; sourceTree = "<group>"; };
-		6919964D77A7D3AF8E5A6B6C759AA4FC /* AAViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAViewAnimator-dummy.m"; sourceTree = "<group>"; };
-		6B682CCC11FFD800E8B186E9EFA6E634 /* AANotifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AANotifier.swift; path = AANotifier/Classes/AANotifier.swift; sourceTree = "<group>"; };
-		74210DF6E1BEB8C29C59A4130DAEB63E /* AANotifier+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AANotifier+Helper.swift"; path = "AANotifier/Classes/AANotifier+Helper.swift"; sourceTree = "<group>"; };
-		77C493DE15EF5D59159712A3048F3F1E /* AAViewAnimator+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAViewAnimator+UIKit.swift"; path = "AAViewAnimator/Classes/AAViewAnimator+UIKit.swift"; sourceTree = "<group>"; };
-		787177D646A0721DA5FC69951A3BBFC0 /* AAViewAnimator+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAViewAnimator+Helper.swift"; path = "AAViewAnimator/Classes/AAViewAnimator+Helper.swift"; sourceTree = "<group>"; };
-		7E373E9DE4251A144FCA36CB11ED7D23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80D204C8E47BECDB18C2349F788488B8 /* AAViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AAViewAnimator.swift; path = AAViewAnimator/Classes/AAViewAnimator.swift; sourceTree = "<group>"; };
-		89EB03586DC58865AFA5B726084F1CB7 /* AAViewAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAViewAnimator.xcconfig; sourceTree = "<group>"; };
-		89F3F6976D5ACBCE2EC0E28AA13AD3ED /* AANotifier.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AANotifier.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C63127C822559DB2E3E8735EEB0925 /* AANotifier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AANotifier.xcconfig; sourceTree = "<group>"; };
-		9AF1E8588AD77D580AD3D19F842CF043 /* AANotifier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AANotifier-umbrella.h"; sourceTree = "<group>"; };
-		9C3D862B40E9FEE09881654339CEFAC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C8D1D1B8A1E82FE59DE382FFA197C8C /* AANotifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AANotifier-dummy.m"; sourceTree = "<group>"; };
-		9F251CB7DFD7927D0167ACCA7947DA5A /* AAViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAViewAnimator-prefix.pch"; sourceTree = "<group>"; };
-		B0DAF0119A2E8E9DD7C2EDE13F366DE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4EF44072854C85015469C18B0FFA11F /* Pods-AANotifier_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AANotifier_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B560D257B3B0115BC197E2D42F7162CC /* Pods-AANotifier_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AANotifier_Example-dummy.m"; sourceTree = "<group>"; };
-		C0D16FEBFFACAC37009ACB6E1DE0A177 /* AANotifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AANotifier.modulemap; sourceTree = "<group>"; };
-		C2D238B6E789FE827C066B07445E5E76 /* AAViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C50E847B921B3D490D0159391893245C /* AAViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC4E5A8124C8CC180A8A5EA4969A88EE /* AANotifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AANotifier-prefix.pch"; sourceTree = "<group>"; };
-		DF980AE92B6B2475CD2C1F306E59E987 /* Pods-AANotifier_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AANotifier_Example-resources.sh"; sourceTree = "<group>"; };
-		E2FAF994432772EF293EC2D883A5532C /* Pods-AANotifier_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AANotifier_Example.modulemap"; sourceTree = "<group>"; };
-		E2FB626A7802997D8182FF89317531A8 /* AANibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AANibView.swift; path = AANotifier/Classes/AANibView.swift; sourceTree = "<group>"; };
+		01E536A4837788CFDBC840A2397BE1A0 /* AANotifier-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AANotifier-Info.plist"; sourceTree = "<group>"; };
+		209146FB409617554A1735259572249B /* AAViewAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AAViewAnimator-Info.plist"; sourceTree = "<group>"; };
+		3C1530D08B264CDEA07ABF0F654CD297 /* AANotifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AANotifier.swift; path = AANotifier/Classes/AANotifier.swift; sourceTree = "<group>"; };
+		3C57090B14F0CB0879CF34977FACB2B5 /* AAViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AAViewAnimator.modulemap; sourceTree = "<group>"; };
+		4938C548CB3CB16EF1B94E1C1B54384C /* Pods-AANotifier_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AANotifier_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		51203A1960B2CDCB645FE45A7DC3AC50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6753488034D059799763D24C9B90FD57 /* AAViewAnimator+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAViewAnimator+UIKit.swift"; path = "AAViewAnimator/Classes/AAViewAnimator+UIKit.swift"; sourceTree = "<group>"; };
+		69C5D4BB1A06C49ECEF7694CFF0035A3 /* Pods-AANotifier_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AANotifier_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D8B4DE10060AC3446B77919E92D4671 /* Pods-AANotifier_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AANotifier_Example-dummy.m"; sourceTree = "<group>"; };
+		753BD79818AD0F8C9C876CF5AA731938 /* AANibView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AANibView.swift; path = AANotifier/Classes/AANibView.swift; sourceTree = "<group>"; };
+		7A0DF11362848F2B9C21AD5326914944 /* AAViewAnimator+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AAViewAnimator+Helper.swift"; path = "AAViewAnimator/Classes/AAViewAnimator+Helper.swift"; sourceTree = "<group>"; };
+		956BC0C319687DC0214E753FEE410F79 /* AANotifier+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AANotifier+Helper.swift"; path = "AANotifier/Classes/AANotifier+Helper.swift"; sourceTree = "<group>"; };
+		96D8238720DC90C5390307C82F38E12E /* AAViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AAViewAnimator-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5F1EF9BC94166A66D4F57F16824D825 /* Pods-AANotifier_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AANotifier_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A7B00E77714968E1A507D000229A701A /* AANotifier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AANotifier-umbrella.h"; sourceTree = "<group>"; };
+		AAE004ABBBD69FDB0476A73C42D233CB /* AAViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAViewAnimator-umbrella.h"; sourceTree = "<group>"; };
+		AC5924AFBA4FE3F42466DEC66EAE104D /* Pods-AANotifier_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AANotifier_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B1634F39F909ED4960CB6444AC1FA9B9 /* AANotifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AANotifier.framework; path = AANotifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18FE388EF9BB70847791DDE195341B8 /* Pods-AANotifier_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AANotifier_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C8E4969F0C798C4F6B12CCD96A7326A8 /* AANotifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AANotifier.modulemap; sourceTree = "<group>"; };
+		CC50FBB95B79B3C17BA4B67FE3125A36 /* AAViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AAViewAnimator-prefix.pch"; sourceTree = "<group>"; };
+		CCE2134B9705166C77BC073F14E696DD /* AANotifier.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AANotifier.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D1CC1F676BC3C2557882BAD068C24DC7 /* AAViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E535B702D984661A0647B60859AEE0 /* Pods_AANotifier_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AANotifier_Example.framework; path = "Pods-AANotifier_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F3BAF09D5728EF4F89047F66DC74E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E0A06BB7E8EA9575BD86D6C829DF9F30 /* Pods-AANotifier_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AANotifier_Example-umbrella.h"; sourceTree = "<group>"; };
+		E4D5492DDA58BBEBCA021AF0DCF84108 /* AAViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AAViewAnimator.swift; path = AAViewAnimator/Classes/AAViewAnimator.swift; sourceTree = "<group>"; };
+		E572B665A68DEC5D822A6A92379E91FB /* Pods-AANotifier_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AANotifier_Example-Info.plist"; sourceTree = "<group>"; };
+		E6CAB512BA599C5AC35DFED02E94C2CF /* Pods-AANotifier_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AANotifier_Example.modulemap"; sourceTree = "<group>"; };
+		E78B6C8114A8249692CC3DD7E54F6AA3 /* AANotifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AANotifier-dummy.m"; sourceTree = "<group>"; };
+		E98508444F253E479F4DAC70CA629444 /* AAViewAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AAViewAnimator.xcconfig; sourceTree = "<group>"; };
+		F33F1EA52AD4DF9512EE7B22B22E3556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F91BD73D73842027D6B3DA70585378B9 /* AAViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAViewAnimator.framework; path = AAViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF9A29F723FE0337F2D849CFD60C47E /* AANotifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AANotifier-prefix.pch"; sourceTree = "<group>"; };
+		FEC17785A05404CE8608B01F05B89A58 /* AANotifier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AANotifier.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0ACE6FFE750AEB3EA40F6A73671EE9FA /* Frameworks */ = {
+		2D16A0E2CAB5A73D1CF1B2A130E5216D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53743EDE27046FCE6AA092581691CFF2 /* Foundation.framework in Frameworks */,
+				83F2DA378BA04EA171ED0717602F9C50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55AE86AF38702A6906AAB8B8CC948F1C /* Frameworks */ = {
+		2F6F53097B0AD0FDC1AB766A3611C0DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC34241038AC48D3ABD833073DD3D336 /* Foundation.framework in Frameworks */,
+				64BF340CB4CAC10800106FCB3DFA42E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		992E6A91285E6A605238EADE0C47A0F1 /* Frameworks */ = {
+		6564E3B0EDA129957D550ADC46B95A8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67E60FC96259D0BA9329EC5A50EEC22E /* AAViewAnimator.framework in Frameworks */,
-				F9EA0D68FD5E69310FB533D16E428B53 /* Foundation.framework in Frameworks */,
+				3D6DD37140A5FF9F2DDE50F07A8ED336 /* AAViewAnimator.framework in Frameworks */,
+				4F06CD7637B68FF2D684B37C72785471 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09CF32467A6BEB66A559A525B414B7D4 /* AANotifier */ = {
+		335C839EFE2CB9DD977E28FCB3627FC6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6B682CCC11FFD800E8B186E9EFA6E634 /* AANotifier.swift */,
-				74210DF6E1BEB8C29C59A4130DAEB63E /* AANotifier+Helper.swift */,
-				E2FB626A7802997D8182FF89317531A8 /* AANibView.swift */,
-				8617987B3C136E73B3F29EBC19DA8601 /* Pod */,
-				8807A629A434881CE8343443CFC86408 /* Support Files */,
-			);
-			name = AANotifier;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		28F8B2F47865DF3955C71B9AA5963CCB /* AAViewAnimator */ = {
-			isa = PBXGroup;
-			children = (
-				80D204C8E47BECDB18C2349F788488B8 /* AAViewAnimator.swift */,
-				787177D646A0721DA5FC69951A3BBFC0 /* AAViewAnimator+Helper.swift */,
-				77C493DE15EF5D59159712A3048F3F1E /* AAViewAnimator+UIKit.swift */,
-				DCBFC9C4B97E293E9EB719D830FD640C /* Support Files */,
-			);
-			path = AAViewAnimator;
-			sourceTree = "<group>";
-		};
-		41515FCEAA1755ACEE212EC105185913 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				28F8B2F47865DF3955C71B9AA5963CCB /* AAViewAnimator */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		452B6881FE4E9BCEDC6EFA0406765CDE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				00B26713D4E48247E8E00D133B6A2BE1 /* AANotifier.framework */,
-				C2D238B6E789FE827C066B07445E5E76 /* AAViewAnimator.framework */,
-				3B3319DCE2457700C5D2E6C76CA6F2E7 /* Pods_AANotifier_Example.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5F5E5F41F3451A5BDBCDE567DD3EE5DA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				21278E4A792EE1EC212630A5E2BC8064 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		65EBEF5B240D93EE98AEBBC5C78B26F7 /* Pods-AANotifier_Example */ = {
-			isa = PBXGroup;
-			children = (
-				9C3D862B40E9FEE09881654339CEFAC8 /* Info.plist */,
-				E2FAF994432772EF293EC2D883A5532C /* Pods-AANotifier_Example.modulemap */,
-				3F588431AC8CC73917CD26BB9ED84FD1 /* Pods-AANotifier_Example-acknowledgements.markdown */,
-				B4EF44072854C85015469C18B0FFA11F /* Pods-AANotifier_Example-acknowledgements.plist */,
-				B560D257B3B0115BC197E2D42F7162CC /* Pods-AANotifier_Example-dummy.m */,
-				2F36C3849B9D8C3C85D8873FB88EC3CE /* Pods-AANotifier_Example-frameworks.sh */,
-				DF980AE92B6B2475CD2C1F306E59E987 /* Pods-AANotifier_Example-resources.sh */,
-				5CE7B0472E58AFFB0E132D681CF7732F /* Pods-AANotifier_Example-umbrella.h */,
-				1C27B3765B941442B8E4D3A98D3933DA /* Pods-AANotifier_Example.debug.xcconfig */,
-				3DCE492D2A538E07D453B9F996606A42 /* Pods-AANotifier_Example.release.xcconfig */,
-			);
-			name = "Pods-AANotifier_Example";
-			path = "Target Support Files/Pods-AANotifier_Example";
-			sourceTree = "<group>";
-		};
-		7C813DDD7FA2C92602D3EA68E89C8489 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				09CF32467A6BEB66A559A525B414B7D4 /* AANotifier */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				7C813DDD7FA2C92602D3EA68E89C8489 /* Development Pods */,
-				C456473DF92528906C6EA949BEF22E60 /* Frameworks */,
-				41515FCEAA1755ACEE212EC105185913 /* Pods */,
-				452B6881FE4E9BCEDC6EFA0406765CDE /* Products */,
-				9156DD7BDC4157F0F8D3A1E4BEA8987F /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8617987B3C136E73B3F29EBC19DA8601 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				89F3F6976D5ACBCE2EC0E28AA13AD3ED /* AANotifier.podspec */,
-				27FD18935590529FE4C09CF0746987DB /* LICENSE */,
-				49BF95AC98A0AFA928B720A193E06EF3 /* README.md */,
+				CCE2134B9705166C77BC073F14E696DD /* AANotifier.podspec */,
+				D9F3BAF09D5728EF4F89047F66DC74E0 /* LICENSE */,
+				51203A1960B2CDCB645FE45A7DC3AC50 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		8807A629A434881CE8343443CFC86408 /* Support Files */ = {
+		3B789A90819548971164EDF523434DBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0D16FEBFFACAC37009ACB6E1DE0A177 /* AANotifier.modulemap */,
-				93C63127C822559DB2E3E8735EEB0925 /* AANotifier.xcconfig */,
-				9C8D1D1B8A1E82FE59DE382FFA197C8C /* AANotifier-dummy.m */,
-				DC4E5A8124C8CC180A8A5EA4969A88EE /* AANotifier-prefix.pch */,
-				9AF1E8588AD77D580AD3D19F842CF043 /* AANotifier-umbrella.h */,
-				7E373E9DE4251A144FCA36CB11ED7D23 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AANotifier";
-			sourceTree = "<group>";
-		};
-		9156DD7BDC4157F0F8D3A1E4BEA8987F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				65EBEF5B240D93EE98AEBBC5C78B26F7 /* Pods-AANotifier_Example */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C456473DF92528906C6EA949BEF22E60 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C50E847B921B3D490D0159391893245C /* AAViewAnimator.framework */,
-				5F5E5F41F3451A5BDBCDE567DD3EE5DA /* iOS */,
+				D1CC1F676BC3C2557882BAD068C24DC7 /* AAViewAnimator.framework */,
+				D54303BB03227A4B0EB54C46569BF1FC /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCBFC9C4B97E293E9EB719D830FD640C /* Support Files */ = {
+		3CEB804B3BAA487C39323F6ED6E30BFF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				14D84EE34EA0E31455E2067FF4802D60 /* AAViewAnimator.modulemap */,
-				89EB03586DC58865AFA5B726084F1CB7 /* AAViewAnimator.xcconfig */,
-				6919964D77A7D3AF8E5A6B6C759AA4FC /* AAViewAnimator-dummy.m */,
-				9F251CB7DFD7927D0167ACCA7947DA5A /* AAViewAnimator-prefix.pch */,
-				5CB6CC1850AFBAB25FC178DCC2E53D14 /* AAViewAnimator-umbrella.h */,
-				B0DAF0119A2E8E9DD7C2EDE13F366DE2 /* Info.plist */,
+				3C57090B14F0CB0879CF34977FACB2B5 /* AAViewAnimator.modulemap */,
+				E98508444F253E479F4DAC70CA629444 /* AAViewAnimator.xcconfig */,
+				96D8238720DC90C5390307C82F38E12E /* AAViewAnimator-dummy.m */,
+				209146FB409617554A1735259572249B /* AAViewAnimator-Info.plist */,
+				CC50FBB95B79B3C17BA4B67FE3125A36 /* AAViewAnimator-prefix.pch */,
+				AAE004ABBBD69FDB0476A73C42D233CB /* AAViewAnimator-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AAViewAnimator";
 			sourceTree = "<group>";
 		};
+		3CEC9597614DD1B674BB31E1F822442B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				876A430EF70A2319DB3F4274550C90AB /* AANotifier */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		820F9C036298AF40ECD4A43E1C3A0FCA /* Pods-AANotifier_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E6CAB512BA599C5AC35DFED02E94C2CF /* Pods-AANotifier_Example.modulemap */,
+				4938C548CB3CB16EF1B94E1C1B54384C /* Pods-AANotifier_Example-acknowledgements.markdown */,
+				69C5D4BB1A06C49ECEF7694CFF0035A3 /* Pods-AANotifier_Example-acknowledgements.plist */,
+				6D8B4DE10060AC3446B77919E92D4671 /* Pods-AANotifier_Example-dummy.m */,
+				B18FE388EF9BB70847791DDE195341B8 /* Pods-AANotifier_Example-frameworks.sh */,
+				E572B665A68DEC5D822A6A92379E91FB /* Pods-AANotifier_Example-Info.plist */,
+				E0A06BB7E8EA9575BD86D6C829DF9F30 /* Pods-AANotifier_Example-umbrella.h */,
+				AC5924AFBA4FE3F42466DEC66EAE104D /* Pods-AANotifier_Example.debug.xcconfig */,
+				A5F1EF9BC94166A66D4F57F16824D825 /* Pods-AANotifier_Example.release.xcconfig */,
+			);
+			name = "Pods-AANotifier_Example";
+			path = "Target Support Files/Pods-AANotifier_Example";
+			sourceTree = "<group>";
+		};
+		876A430EF70A2319DB3F4274550C90AB /* AANotifier */ = {
+			isa = PBXGroup;
+			children = (
+				753BD79818AD0F8C9C876CF5AA731938 /* AANibView.swift */,
+				3C1530D08B264CDEA07ABF0F654CD297 /* AANotifier.swift */,
+				956BC0C319687DC0214E753FEE410F79 /* AANotifier+Helper.swift */,
+				335C839EFE2CB9DD977E28FCB3627FC6 /* Pod */,
+				879AC5B48795F4620B6DAE462E8C7EF1 /* Support Files */,
+			);
+			name = AANotifier;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		879AC5B48795F4620B6DAE462E8C7EF1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8E4969F0C798C4F6B12CCD96A7326A8 /* AANotifier.modulemap */,
+				FEC17785A05404CE8608B01F05B89A58 /* AANotifier.xcconfig */,
+				E78B6C8114A8249692CC3DD7E54F6AA3 /* AANotifier-dummy.m */,
+				01E536A4837788CFDBC840A2397BE1A0 /* AANotifier-Info.plist */,
+				FDF9A29F723FE0337F2D849CFD60C47E /* AANotifier-prefix.pch */,
+				A7B00E77714968E1A507D000229A701A /* AANotifier-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AANotifier";
+			sourceTree = "<group>";
+		};
+		983EDDE9A326CA63B7EE7517691A8E9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1634F39F909ED4960CB6444AC1FA9B9 /* AANotifier.framework */,
+				F91BD73D73842027D6B3DA70585378B9 /* AAViewAnimator.framework */,
+				D3E535B702D984661A0647B60859AEE0 /* Pods_AANotifier_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE2A34897B3022B54D4585681555DBC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBAF3430C3D43CA7D567CB45084A2843 /* AAViewAnimator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3CEC9597614DD1B674BB31E1F822442B /* Development Pods */,
+				3B789A90819548971164EDF523434DBA /* Frameworks */,
+				CE2A34897B3022B54D4585681555DBC4 /* Pods */,
+				983EDDE9A326CA63B7EE7517691A8E9A /* Products */,
+				EE880FEE81FFB14EDA96737DAD1DB00D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D54303BB03227A4B0EB54C46569BF1FC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F33F1EA52AD4DF9512EE7B22B22E3556 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DBAF3430C3D43CA7D567CB45084A2843 /* AAViewAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				E4D5492DDA58BBEBCA021AF0DCF84108 /* AAViewAnimator.swift */,
+				7A0DF11362848F2B9C21AD5326914944 /* AAViewAnimator+Helper.swift */,
+				6753488034D059799763D24C9B90FD57 /* AAViewAnimator+UIKit.swift */,
+				3CEB804B3BAA487C39323F6ED6E30BFF /* Support Files */,
+			);
+			name = AAViewAnimator;
+			path = AAViewAnimator;
+			sourceTree = "<group>";
+		};
+		EE880FEE81FFB14EDA96737DAD1DB00D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				820F9C036298AF40ECD4A43E1C3A0FCA /* Pods-AANotifier_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		50FCA339514D2C8539673C5E8A423D3B /* Headers */ = {
+		2E0698B432957299F7D0F422C1B85994 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2366958BE4833D0D4073B9931E95A7B /* AAViewAnimator-umbrella.h in Headers */,
+				E3CBF56D7364E96A8A015E98285054F0 /* AAViewAnimator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9381D710085BE5B253C9AA1F499195ED /* Headers */ = {
+		46050CB6E6BFBFF62A6AEC46F7E50236 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6012362345258C890477D074BDE0D8 /* Pods-AANotifier_Example-umbrella.h in Headers */,
+				4824B29344ECD01513D97147081F083E /* Pods-AANotifier_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0ADBC73B7147FC0C8D0F44E9A3E3EA8 /* Headers */ = {
+		4BFBF557474F1D1633AD1427C73D1405 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D027BCE43AFC55FBC2CF363FDF978D86 /* AANotifier-umbrella.h in Headers */,
+				E9BD57DC039EB8995AF4C79431593477 /* AANotifier-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4BD35D4DE788223D3E2C7FB2362DEB60 /* AANotifier */ = {
+		55E0105892DDA43904C07BFDFA1E5561 /* AAViewAnimator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A0EE9E36F176ED12EB2AEDC027E6FEC /* Build configuration list for PBXNativeTarget "AANotifier" */;
+			buildConfigurationList = 8A0C4721A2C9C9D3710275811E726D72 /* Build configuration list for PBXNativeTarget "AAViewAnimator" */;
 			buildPhases = (
-				A0ADBC73B7147FC0C8D0F44E9A3E3EA8 /* Headers */,
-				385563D57819F43B026C3508DA6A72DC /* Sources */,
-				992E6A91285E6A605238EADE0C47A0F1 /* Frameworks */,
-				90054ECAF9C209757E6B783D5E0F9D76 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D9816D46EC1A81C139CE98E484F9627F /* PBXTargetDependency */,
-			);
-			name = AANotifier;
-			productName = AANotifier;
-			productReference = 00B26713D4E48247E8E00D133B6A2BE1 /* AANotifier.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8A66B71EDA11F6D42EF217BDCDAD9BA8 /* AAViewAnimator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A384530FFB2C7745C061C52A1C845906 /* Build configuration list for PBXNativeTarget "AAViewAnimator" */;
-			buildPhases = (
-				50FCA339514D2C8539673C5E8A423D3B /* Headers */,
-				2DF10A1716DFEF297868E91248EC1CB9 /* Sources */,
-				0ACE6FFE750AEB3EA40F6A73671EE9FA /* Frameworks */,
-				06B023142335A9D4667BEE351D893799 /* Resources */,
+				2E0698B432957299F7D0F422C1B85994 /* Headers */,
+				D295ED15CDB77DEFCE17D276E3B5DD00 /* Sources */,
+				2D16A0E2CAB5A73D1CF1B2A130E5216D /* Frameworks */,
+				2B6829D8594C20B8983921268C3EC2A0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -325,81 +305,92 @@
 			);
 			name = AAViewAnimator;
 			productName = AAViewAnimator;
-			productReference = C2D238B6E789FE827C066B07445E5E76 /* AAViewAnimator.framework */;
+			productReference = F91BD73D73842027D6B3DA70585378B9 /* AAViewAnimator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EA843F0AD6BC8C03E6C7FE3B5F20CCE7 /* Pods-AANotifier_Example */ = {
+		5F368DECEF286D58C7DDBE8F8A0E4AFA /* AANotifier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 209284989F292917B4EFCA53A981CF47 /* Build configuration list for PBXNativeTarget "Pods-AANotifier_Example" */;
+			buildConfigurationList = 71C35A58C32DF1D598D2734EDED901B9 /* Build configuration list for PBXNativeTarget "AANotifier" */;
 			buildPhases = (
-				9381D710085BE5B253C9AA1F499195ED /* Headers */,
-				6CCF850763ECAD6DA885CBBC40AE2D06 /* Sources */,
-				55AE86AF38702A6906AAB8B8CC948F1C /* Frameworks */,
-				4E1A42586F9F30C3800F5EAB079F92D3 /* Resources */,
+				4BFBF557474F1D1633AD1427C73D1405 /* Headers */,
+				C7AC27ABC09DE1E39AEC8848B71E9B2D /* Sources */,
+				6564E3B0EDA129957D550ADC46B95A8F /* Frameworks */,
+				65CDD3C5D15279E03418876B45FA763C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1B8150CEDA9725D9F892AF442DE01268 /* PBXTargetDependency */,
-				9FA1A89D0D22E343100D246A4ED3C897 /* PBXTargetDependency */,
+				D7DD0C2E930CE7F4C4AF861BC0A4443F /* PBXTargetDependency */,
+			);
+			name = AANotifier;
+			productName = AANotifier;
+			productReference = B1634F39F909ED4960CB6444AC1FA9B9 /* AANotifier.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		996264EE9B688A565706045228908F23 /* Pods-AANotifier_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8049AB667D1AEA7A03F60FF7F8755398 /* Build configuration list for PBXNativeTarget "Pods-AANotifier_Example" */;
+			buildPhases = (
+				46050CB6E6BFBFF62A6AEC46F7E50236 /* Headers */,
+				67E5507CEABAFFA05A372B0F1B078468 /* Sources */,
+				2F6F53097B0AD0FDC1AB766A3611C0DE /* Frameworks */,
+				7D2D0A68954C6A07D0169741312D8FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7AAEF4C696A3DB91B3E8C886EC98742 /* PBXTargetDependency */,
+				FDE5AE69D62EC4CA697F3FD438631385 /* PBXTargetDependency */,
 			);
 			name = "Pods-AANotifier_Example";
 			productName = "Pods-AANotifier_Example";
-			productReference = 3B3319DCE2457700C5D2E6C76CA6F2E7 /* Pods_AANotifier_Example.framework */;
+			productReference = D3E535B702D984661A0647B60859AEE0 /* Pods_AANotifier_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-					4BD35D4DE788223D3E2C7FB2362DEB60 = {
-						LastSwiftMigration = 1020;
-					};
-					8A66B71EDA11F6D42EF217BDCDAD9BA8 = {
-						LastSwiftMigration = 1020;
-					};
-				};
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 452B6881FE4E9BCEDC6EFA0406765CDE /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 983EDDE9A326CA63B7EE7517691A8E9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BD35D4DE788223D3E2C7FB2362DEB60 /* AANotifier */,
-				8A66B71EDA11F6D42EF217BDCDAD9BA8 /* AAViewAnimator */,
-				EA843F0AD6BC8C03E6C7FE3B5F20CCE7 /* Pods-AANotifier_Example */,
+				5F368DECEF286D58C7DDBE8F8A0E4AFA /* AANotifier */,
+				55E0105892DDA43904C07BFDFA1E5561 /* AAViewAnimator */,
+				996264EE9B688A565706045228908F23 /* Pods-AANotifier_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06B023142335A9D4667BEE351D893799 /* Resources */ = {
+		2B6829D8594C20B8983921268C3EC2A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E1A42586F9F30C3800F5EAB079F92D3 /* Resources */ = {
+		65CDD3C5D15279E03418876B45FA763C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90054ECAF9C209757E6B783D5E0F9D76 /* Resources */ = {
+		7D2D0A68954C6A07D0169741312D8FF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,65 +400,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2DF10A1716DFEF297868E91248EC1CB9 /* Sources */ = {
+		67E5507CEABAFFA05A372B0F1B078468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DF7F4F04D05168EAA5B42FB0F246B70 /* AAViewAnimator+Helper.swift in Sources */,
-				41317A9E4011ECCFDEDC9FF75879301F /* AAViewAnimator+UIKit.swift in Sources */,
-				B060DCCD8079C4CAC518270E7967F3B0 /* AAViewAnimator-dummy.m in Sources */,
-				4D60650580522D491CCABC9010DC5614 /* AAViewAnimator.swift in Sources */,
+				6C79962AF6B21151C5B72AB6BC48FC70 /* Pods-AANotifier_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		385563D57819F43B026C3508DA6A72DC /* Sources */ = {
+		C7AC27ABC09DE1E39AEC8848B71E9B2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3753C86509DEFEEA3CAEBEB8325638 /* AANibView.swift in Sources */,
-				413CE7F0A8AC6DBC77D4B314DA4AD78F /* AANotifier+Helper.swift in Sources */,
-				EC075D4003239DE1EEE2EF79819011D1 /* AANotifier-dummy.m in Sources */,
-				F0DD328F52EA562EA55788E4BA1FB066 /* AANotifier.swift in Sources */,
+				F4DF1D62DE230FEBB61A91DCC5791012 /* AANibView.swift in Sources */,
+				27227651FEF4F9976128D3FD89334E40 /* AANotifier+Helper.swift in Sources */,
+				D6F39F52BDDD674EC77696D49061E068 /* AANotifier-dummy.m in Sources */,
+				14273A58BA39AE3B54DA411FB8E37B87 /* AANotifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CCF850763ECAD6DA885CBBC40AE2D06 /* Sources */ = {
+		D295ED15CDB77DEFCE17D276E3B5DD00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C869543269FE21E29C849BD56EDAE3 /* Pods-AANotifier_Example-dummy.m in Sources */,
+				8698F12C7871483160B5A16D457A1405 /* AAViewAnimator+Helper.swift in Sources */,
+				6407E0A0CA0B3981ACCC7B57EF53F5FB /* AAViewAnimator+UIKit.swift in Sources */,
+				BC9EBECBDA9A9C9D89848839E4FC9362 /* AAViewAnimator-dummy.m in Sources */,
+				C69D45ECBB9D8AABE4639148F160AC21 /* AAViewAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1B8150CEDA9725D9F892AF442DE01268 /* PBXTargetDependency */ = {
+		C7AAEF4C696A3DB91B3E8C886EC98742 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AANotifier;
-			target = 4BD35D4DE788223D3E2C7FB2362DEB60 /* AANotifier */;
-			targetProxy = F669BF51A011F8BF12F8F40AB813502C /* PBXContainerItemProxy */;
+			target = 5F368DECEF286D58C7DDBE8F8A0E4AFA /* AANotifier */;
+			targetProxy = BBF2393BFC0F55C81C24BD3FC1E3FF80 /* PBXContainerItemProxy */;
 		};
-		9FA1A89D0D22E343100D246A4ED3C897 /* PBXTargetDependency */ = {
+		D7DD0C2E930CE7F4C4AF861BC0A4443F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AAViewAnimator;
-			target = 8A66B71EDA11F6D42EF217BDCDAD9BA8 /* AAViewAnimator */;
-			targetProxy = C4AEF9F04F8258B5ED7950B39C740FAB /* PBXContainerItemProxy */;
+			target = 55E0105892DDA43904C07BFDFA1E5561 /* AAViewAnimator */;
+			targetProxy = 350675A1D63A97A6E3C96E5E1F7B1821 /* PBXContainerItemProxy */;
 		};
-		D9816D46EC1A81C139CE98E484F9627F /* PBXTargetDependency */ = {
+		FDE5AE69D62EC4CA697F3FD438631385 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AAViewAnimator;
-			target = 8A66B71EDA11F6D42EF217BDCDAD9BA8 /* AAViewAnimator */;
-			targetProxy = 5C53E0B3D494E80A7BFBC31DA841C7EE /* PBXContainerItemProxy */;
+			target = 55E0105892DDA43904C07BFDFA1E5561 /* AAViewAnimator */;
+			targetProxy = 99A688C5B3DB12B8B91430D698A4493C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		710C8FE36E318AECFB6D3BE84A10699B /* Debug */ = {
+		58F453BFEC391544127BCAA73DD17560 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C27B3765B941442B8E4D3A98D3933DA /* Pods-AANotifier_Example.debug.xcconfig */;
+			baseConfigurationReference = E98508444F253E479F4DAC70CA629444 /* AAViewAnimator.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -477,32 +467,61 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AANotifier_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AAViewAnimator/AAViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AANotifier_Example/Pods-AANotifier_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = AAViewAnimator;
+				PRODUCT_NAME = AAViewAnimator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		73ABC2D18F03827B7773405E7F2AD926 /* Debug */ = {
+		5F31C9627AA212010A1C9E6CE09DEFFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC17785A05404CE8608B01F05B89A58 /* AANotifier.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AANotifier/AANotifier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AANotifier/AANotifier-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AANotifier/AANotifier.modulemap";
+				PRODUCT_MODULE_NAME = AANotifier;
+				PRODUCT_NAME = AANotifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60A7F9B4A8E92A5B16CC2AA887D9FE07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -531,8 +550,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7E1F3D358966F24610AD782F313B4C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -559,203 +636,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		78109B2DBF3E3098E3DC3CEBFFE7AB8E /* Release */ = {
+		A05E68B4B3A03913707C1BB097BDC460 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89EB03586DC58865AFA5B726084F1CB7 /* AAViewAnimator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AAViewAnimator/AAViewAnimator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAViewAnimator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator.modulemap";
-				PRODUCT_MODULE_NAME = AAViewAnimator;
-				PRODUCT_NAME = AAViewAnimator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9B6B989AABD96BB9DECB1784EA5E2534 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		C4B5E5BB9C9120B9F44FD5DEDEA25866 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C63127C822559DB2E3E8735EEB0925 /* AANotifier.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AANotifier/AANotifier-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AANotifier/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AANotifier/AANotifier.modulemap";
-				PRODUCT_MODULE_NAME = AANotifier;
-				PRODUCT_NAME = AANotifier;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F05310D19E64F1D03EB6CF0559C92A1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C63127C822559DB2E3E8735EEB0925 /* AANotifier.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AANotifier/AANotifier-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AANotifier/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AANotifier/AANotifier.modulemap";
-				PRODUCT_MODULE_NAME = AANotifier;
-				PRODUCT_NAME = AANotifier;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F0E437932F76913756E57F4816A17892 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89EB03586DC58865AFA5B726084F1CB7 /* AAViewAnimator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AAViewAnimator/AAViewAnimator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AAViewAnimator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator.modulemap";
-				PRODUCT_MODULE_NAME = AAViewAnimator;
-				PRODUCT_NAME = AAViewAnimator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F71ED44BCA8FCC11E9333DBC3C90AD1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DCE492D2A538E07D453B9F996606A42 /* Pods-AANotifier_Example.release.xcconfig */;
+			baseConfigurationReference = AC5924AFBA4FE3F42466DEC66EAE104D /* Pods-AANotifier_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -767,7 +656,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AANotifier_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AANotifier_Example/Pods-AANotifier_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -780,7 +669,70 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3756C59AB813269D6A628E11391B7B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC17785A05404CE8608B01F05B89A58 /* AANotifier.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AANotifier/AANotifier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AANotifier/AANotifier-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AANotifier/AANotifier.modulemap";
+				PRODUCT_MODULE_NAME = AANotifier;
+				PRODUCT_NAME = AANotifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAB5F976E9C2DA03999C21016AEB39E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F1EF9BC94166A66D4F57F16824D825 /* Pods-AANotifier_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AANotifier_Example/Pods-AANotifier_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AANotifier_Example/Pods-AANotifier_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -788,46 +740,77 @@
 			};
 			name = Release;
 		};
+		D8530F2E65A3B29B066164FE8CC6C44F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98508444F253E479F4DAC70CA629444 /* AAViewAnimator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AAViewAnimator/AAViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AAViewAnimator/AAViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = AAViewAnimator;
+				PRODUCT_NAME = AAViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		209284989F292917B4EFCA53A981CF47 /* Build configuration list for PBXNativeTarget "Pods-AANotifier_Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				710C8FE36E318AECFB6D3BE84A10699B /* Debug */,
-				F71ED44BCA8FCC11E9333DBC3C90AD1C /* Release */,
+				7E1F3D358966F24610AD782F313B4C40 /* Debug */,
+				60A7F9B4A8E92A5B16CC2AA887D9FE07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		71C35A58C32DF1D598D2734EDED901B9 /* Build configuration list for PBXNativeTarget "AANotifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73ABC2D18F03827B7773405E7F2AD926 /* Debug */,
-				9B6B989AABD96BB9DECB1784EA5E2534 /* Release */,
+				A3756C59AB813269D6A628E11391B7B4 /* Debug */,
+				5F31C9627AA212010A1C9E6CE09DEFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A0EE9E36F176ED12EB2AEDC027E6FEC /* Build configuration list for PBXNativeTarget "AANotifier" */ = {
+		8049AB667D1AEA7A03F60FF7F8755398 /* Build configuration list for PBXNativeTarget "Pods-AANotifier_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F05310D19E64F1D03EB6CF0559C92A1C /* Debug */,
-				C4B5E5BB9C9120B9F44FD5DEDEA25866 /* Release */,
+				A05E68B4B3A03913707C1BB097BDC460 /* Debug */,
+				CAB5F976E9C2DA03999C21016AEB39E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A384530FFB2C7745C061C52A1C845906 /* Build configuration list for PBXNativeTarget "AAViewAnimator" */ = {
+		8A0C4721A2C9C9D3710275811E726D72 /* Build configuration list for PBXNativeTarget "AAViewAnimator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0E437932F76913756E57F4816A17892 /* Debug */,
-				78109B2DBF3E3098E3DC3CEBFFE7AB8E /* Release */,
+				D8530F2E65A3B29B066164FE8CC6C44F /* Debug */,
+				58F453BFEC391544127BCAA73DD17560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
