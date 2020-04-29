@@ -38,23 +38,13 @@ open class AANotifier {
     /// AANotifier flag to hide on tap
     var hideOnTap: Bool = false
     
-    /// AANotifier flag to hide status bar when the view will appear
-    var hideStatusBar: Bool = false
-    
     /// AANotifier timer for deadline
     var deadlineTimer: Timer?
     
     /// AANotifier deadline interval to disappear the view from screen
     open var deadline: TimeInterval? {
         didSet {
-            guard let interval = deadline else {
-                return
-            }
-            deadlineTimer = Timer.scheduledTimer(timeInterval: interval,
-                                                 target: self,
-                                                 selector: #selector(hide),
-                                                 userInfo: nil,
-                                                 repeats: false)
+            setTimer()
         }
     }
     
@@ -95,17 +85,20 @@ open class AANotifier {
     ///
     /// - Parameter isVisible: Visibility flag
     private func startAnimation(_ isVisible: Bool) {
-        isVisible ? addNotifierView() : removeNotifierView()
+        if isVisible {
+            addNotifierView()
+        }
 
         let transition = isVisible ? transitionA : transitionB
         let duration   = isVisible ? durationA : durationB
-        view.aa_animate(duration: duration, repeatCount: 1, springDamping: .none, animation: transition) { (flag, _) in
-
-            if flag {
-                self.toggleStatusBar(isVisible)
+        view.aa_animate(duration: duration, repeatCount: 1, springDamping: .none, animation: transition, completion: { isAnimating, view in
+            
+            if !isAnimating && !isVisible {
+                self.removeNotifierView()
             }
-        }
-        
+            
+            
+        })
     }
     
     /// AANotifier options if any
@@ -117,8 +110,6 @@ open class AANotifier {
             switch option {
             case let .preferedHeight(value):
                 preferedHeight = value
-            case .hideStatusBar:
-                hideStatusBar = true
             case let .transitionA(value, duration):
                 transitionA = value
                 durationA = duration
@@ -145,15 +136,16 @@ open class AANotifier {
     
     /// AANotifier animate notifier with completion
     open func show() {
-        startAnimation(true)        
+        setTimer()
+        startAnimation(true)
     }
     
     /// AANotifier remove view
     private func removeNotifierView() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.view.removeGestureRecognizer(self.tapGesture)
-            self.view.removeFromSuperview()
-        }
+        deadlineTimer?.invalidate()
+        self.view.removeGestureRecognizer(self.tapGesture)
+        self.view.removeFromSuperview()
+        NSLayoutConstraint.deactivate(constraints)
     }
     
     /// AANotifier add view
@@ -162,6 +154,7 @@ open class AANotifier {
         view.addGestureRecognizer(tapGesture)
         keyWindow.addSubview(view)
         NSLayoutConstraint.activate(constraints)
+        
     }
 
     /// didTappedAction Selector
@@ -174,12 +167,16 @@ open class AANotifier {
         didTapped?()
     }
     
-    /// Toggle Status Bar if allowed
-    ///
-    /// - Parameter show: visibility flag
-    private func toggleStatusBar(_ show: Bool) {
-        guard hideStatusBar else { return }
-        UIApplication.shared.statusBarView?.isHidden = show
+    func setTimer() {
+        deadlineTimer?.invalidate()
+        guard let interval = deadline else {
+            return
+        }
+        deadlineTimer = Timer.scheduledTimer(timeInterval: interval,
+                                                        target: self,
+                                                        selector: #selector(hide),
+                                                        userInfo: nil,
+                                                        repeats: false)
     }
     
 }
@@ -194,8 +191,25 @@ fileprivate extension AANotifier {
     var constraints: [NSLayoutConstraint] {
         
         let horizontalMargin = margin.H ?? 0
-        let verticalMargin = margin.V ?? 0
-        let heightConstant = preferedHeight ?? view.subviews.first!.frame.size.height
+        var verticalMargin = margin.V ?? 0
+        var heightConstant = preferedHeight ?? view.subviews.first!.frame.size.height
+        
+        var baseline: NSLayoutConstraint
+        
+        switch position {
+        case .top:
+            let statusBarHeight = statusBarFrame.height
+            if statusBarHeight > 0 {
+                let statusBarHeight = statusBarHeight + 5
+                heightConstant += statusBarHeight
+                verticalMargin -= statusBarHeight
+            }
+            baseline = getConstraint(.top, constant: verticalMargin)
+        case .bottom:
+            baseline = getConstraint(.bottom, constant: -verticalMargin)
+        case .middle:
+            baseline = getConstraint(.centerY)
+        }
         
         let height = NSLayoutConstraint(item: view, attribute: .height,
                                         relatedBy: .equal, toItem: nil,
@@ -206,17 +220,6 @@ fileprivate extension AANotifier {
 
         let right = getConstraint(.right, constant: -horizontalMargin)
         
-        var baseline: NSLayoutConstraint
-        
-        switch position {
-        case .top:
-            baseline = getConstraint(.top, constant: verticalMargin)
-        case .bottom:
-            baseline = getConstraint(.bottom, constant: -verticalMargin)
-        case .middle:
-            baseline = getConstraint(.centerY)
-        }
-        
         return [height, left, right, baseline]
         
     }
@@ -224,6 +227,16 @@ fileprivate extension AANotifier {
     /// Get Layout constraints helper
     func getConstraint(_ attr: NSLayoutConstraint.Attribute, constant: CGFloat = 0) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: view, attribute: attr, relatedBy: .equal, toItem: keyWindow, attribute: attr, multiplier: 1, constant: constant)
+    }
+    
+    var statusBarFrame: CGRect {
+        let statusBarFrame: CGRect
+        if #available(iOS 13.0, *) {
+            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? .zero
+        } else {
+            statusBarFrame = UIApplication.shared.statusBarFrame
+        }
+        return statusBarFrame
     }
 }
 

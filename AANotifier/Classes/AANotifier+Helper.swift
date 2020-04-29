@@ -30,7 +30,6 @@ struct AAMargin {
 ///
 /// - duration: time interval for animation
 /// - preferedHeight: height of AANotifier
-/// - hideStatusBar: flag for statusbar visibility
 /// - transitionA: AANotifier show animation
 /// - transitionB: AANotifier hide animation
 /// - position: AANotifier position
@@ -40,7 +39,6 @@ struct AAMargin {
 public enum AANotifierOptions {
     
     case preferedHeight(CGFloat)
-    case hideStatusBar
     case transitionA(AAViewAnimators, TimeInterval)
     case transitionB(AAViewAnimators, TimeInterval)
     case position(AANotifierPosition)
@@ -53,7 +51,14 @@ public enum AANotifierOptions {
 extension UIApplication {
     
     /// Status bar view
-    var statusBarView: UIView? {
-        return value(forKey: "statusBar") as? UIView
+    static var aa_statusBarView: CGRect {
+        let statusBarFrame: CGRect
+        if #available(iOS 13.0, *) {
+            statusBarFrame = UIApplication.shared.keyWindow?.window?.windowScene?.statusBarManager?.statusBarFrame ?? .zero
+        } else {
+            statusBarFrame = UIApplication.shared.statusBarFrame
+        }
+        return statusBarFrame
     }
 }
+

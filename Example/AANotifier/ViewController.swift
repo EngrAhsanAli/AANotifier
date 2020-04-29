@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         let notifierView = UIView.fromNib(nibName: "StatusView")!
         let options: [AANotifierOptions] = [
             .deadline(2.0),
-            .hideStatusBar,
+            .preferedHeight(50),
             .margins(H: 0, V: 30),
             .position(.top),
             .transitionA(.fromTop, 0.8),

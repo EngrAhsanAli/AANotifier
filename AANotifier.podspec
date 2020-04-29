@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'AANotifier'
-s.version          = '1.1'
+s.version          = '1.2'
 s.summary          = 'AANotifier allows you to create UIView based fragments to be appear on screen at runtime in iOS, written in Swift.'
 
 s.description      = <<-DESC

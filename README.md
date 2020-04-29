@@ -75,7 +75,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-pod 'AANotifier' , '1.0'
+pod 'AANotifier' , '1.2'
 end
 
 ```
@@ -136,7 +136,6 @@ let options: [AANotifierOptions] = [
 .position(.bottom), // notifier position
 .preferedHeight(50), // notifier height
 .margins(H: 60, V: 40), // notifier margins
-.hideStatusBar, // Hides the status bar view when animating
 .hideOnTap, // Hides on tap
 .deadline(2.0) // Deadline of notifier for dismissal
 ]
@@ -187,7 +186,6 @@ You can use following notifier options for your notifier:
 |  Options	 	  |  Types	      	 	  | Description		    				       	 |
 |-----------------|-----------------------|----------------------------------------------|
 | `preferedHeight`| `CGFloat` 			  | AANotifier height    						 |
-| `hideStatusBar` | `---` 				  | Status bar visibility if added 	 				 |
 | `transitionA`   | `AAViewAnimators, TimeInterval`     | Animator for showing notifier 			     |
 | `transitionB`   | `AAViewAnimators, TimeInterval`     | Animator for hiding notifier 				 |
 | `position`      | `AANotifierPosition`  | AANotifier position	   						 |
